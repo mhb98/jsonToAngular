@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\SECL\\Desktop\\.net angular\\jsonToAngular(backEnd)\\jsonToAngular(backEnd)\\jsonToAngular(backEnd).csproj": {}
+    "D:\\git file\\jsonToAngular\\jsonToAngular(backEnd)\\jsonToAngular(backEnd).csproj": {}
   },
   "projects": {
-    "C:\\Users\\SECL\\Desktop\\.net angular\\jsonToAngular(backEnd)\\jsonToAngular(backEnd)\\jsonToAngular(backEnd).csproj": {
+    "D:\\git file\\jsonToAngular\\jsonToAngular(backEnd)\\jsonToAngular(backEnd).csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\SECL\\Desktop\\.net angular\\jsonToAngular(backEnd)\\jsonToAngular(backEnd)\\jsonToAngular(backEnd).csproj",
+        "projectUniqueName": "D:\\git file\\jsonToAngular\\jsonToAngular(backEnd)\\jsonToAngular(backEnd).csproj",
         "projectName": "jsonToAngular(backEnd)",
-        "projectPath": "C:\\Users\\SECL\\Desktop\\.net angular\\jsonToAngular(backEnd)\\jsonToAngular(backEnd)\\jsonToAngular(backEnd).csproj",
+        "projectPath": "D:\\git file\\jsonToAngular\\jsonToAngular(backEnd)\\jsonToAngular(backEnd).csproj",
         "packagesPath": "C:\\Users\\SECL\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\SECL\\Desktop\\.net angular\\jsonToAngular(backEnd)\\jsonToAngular(backEnd)\\obj\\",
+        "outputPath": "D:\\git file\\jsonToAngular\\jsonToAngular(backEnd)\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\SECL\\AppData\\Roaming\\NuGet\\NuGet.Config",

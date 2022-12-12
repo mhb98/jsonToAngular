@@ -44,5 +44,17 @@ export class AppComponent implements OnInit{
         console.log("Hello");
       });
   }
+  onSubmit(form:HTMLFormElement){
+
+    this.http
+      .post(
+        'https://localhost:7060/api/ProductAPI/GetFormModule',
+        form['value']
+      )
+      .subscribe(responseData => {
+        console.log(responseData);
+      });
+    console.log(form['value']);
+  }
 }
 

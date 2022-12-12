@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "EQyizvjPAMDVY/dKgpJIoDoXhDxFCq/EbYM8m3VP5ek6DpOp/YzOIE6u2kbFLMCdvDMjNkjTY53m7pIlBrD9/A==",
+  "dgSpecHash": "933OIXOdqWNoo8KY4ZVT/92lKfg2MfbeQ8A0lX1UYDwXy7TqLLslGRA3Qb9+vM/gZaf86n0kr/6Y6wdua7wimA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\SECL\\Desktop\\.net angular\\jsonToAngular(backEnd)\\jsonToAngular(backEnd)\\jsonToAngular(backEnd).csproj",
+  "projectFilePath": "D:\\git file\\jsonToAngular\\jsonToAngular(backEnd)\\jsonToAngular(backEnd).csproj",
   "expectedPackageFiles": [
     "C:\\Users\\SECL\\.nuget\\packages\\microsoft.netcore.platforms\\3.1.0\\microsoft.netcore.platforms.3.1.0.nupkg.sha512",
     "C:\\Users\\SECL\\.nuget\\packages\\microsoft.win32.registry\\4.7.0\\microsoft.win32.registry.4.7.0.nupkg.sha512",

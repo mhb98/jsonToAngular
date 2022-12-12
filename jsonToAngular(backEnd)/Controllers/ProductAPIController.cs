@@ -27,6 +27,14 @@ namespace jsonToAngular_backEnd_.Controllers
 
             return FormJsonFormat;
         }
+        [HttpPost]
+        [Route("GetFormModule")]
+        public string GetFromAngularApp([FromBody] Object json)
+        {
+            return (string)json;
+        }
+
+
     }
   
 }
