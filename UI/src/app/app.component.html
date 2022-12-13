@@ -4,8 +4,10 @@
   </h1>
 
 
-<div [innerHTML]="htmlview"></div>
-<button></button>
-
-  
+<!-- <div [innerHTML]="htmlview"></div>
+<button (ngSubmit)="onSubmit()">Submit</button> -->
 </div>
+
+<form (ngSubmit)="onSubmitNew(f)" #f="ngForm">
+  <div id="data"[innerHtml]="htmlview"></div>
+</form>

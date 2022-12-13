@@ -1,7 +1,8 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, ElementRef, OnInit, QueryList, ViewChildren } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { map } from 'rxjs/operators';
 import {DomSanitizer, SafeHtml}  from "@angular/platform-browser";
+import { NgForm } from '@angular/forms';
 
 
 @Component({
@@ -34,14 +35,14 @@ export class AppComponent implements OnInit{
           
           this.alphas=responseData as string
           this.htmlview=this.sanitizer.bypassSecurityTrustHtml(this.alphas);
-          console.log(this.alphas)
-         // console.log(this.htmlview)
-          
+          //console.log(this.alphas)
+         // console.log(this.htmlview) 
+           
         })
       )
       .subscribe(posts => {
         // ...
-        console.log("Hello");
+        //console.log("Hello");
       });
   }
   onSubmit(form:HTMLFormElement){
@@ -56,5 +57,13 @@ export class AppComponent implements OnInit{
       });
     console.log(form['value']);
   }
+  fullValue;
+
+  onSubmitNew(form:NgForm){
+    this.fullValue=document.getElementById('data').querySelectorAll('input').item(0).value;
+    console.log(this.fullValue);
+     }
+
+
 }
 
