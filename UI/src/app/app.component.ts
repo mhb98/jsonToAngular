@@ -55,7 +55,7 @@ export class AppComponent implements OnInit{
       .subscribe(responseData => {
         console.log(responseData);
       });
-    
+    //console.log(form['value']);
   }
  // fullValue:any;
   //fullValueJson:any;

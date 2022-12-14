@@ -43,5 +43,40 @@ namespace jsonToAngular_backEnd_.Repository_Pattern
             return Form;
 
         }
+
+        public void storeInformation(object json)
+        {
+            
+            try
+            {
+
+                SqlConnection connection = new SqlConnection(Configuration.GetConnectionString("DefaultConnection").ToString());
+
+                connection.Open();
+               // string storeInforamtion = "INSERT INTO userInformationTable (userInfo) VALUES (json)";
+                SqlCommand command;
+                SqlDataAdapter adapter = new SqlDataAdapter();
+                String sql = "";
+
+                sql = "INSERT INTO userInformationTable (userInfo) VALUES (@json)";
+
+
+                command = new SqlCommand(sql, connection);
+                adapter.InsertCommand = new SqlCommand(sql, connection);
+                adapter.InsertCommand.ExecuteNonQuery();
+
+                command.Dispose(); 
+		        connection.Close();
+
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e.Message);
+            }
+
+            
+
+        }
+
     }
 }
