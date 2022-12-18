@@ -106,6 +106,10 @@ this.sendToAPI();
             console.log(this.finalData);
             this.finalData=JSON.parse(this.finalData);
              console.log(this.finalData)
+
+
+             this.finalForm.push(this.finalData);
+             console.log(this.finalForm)
            
              
           })

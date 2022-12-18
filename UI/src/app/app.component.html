@@ -23,9 +23,23 @@
     {{finalData}}
   </h2> -->
   <p>
+    {{finalData}}
    {{finalData.fname}}
    {{finalData.lname}}
   </p>
+
+<h1>ARRRAAYYYYYY</h1>
+
+<div *ngFor="let item of finalForm">
+  {{finalForm}}
+  {{item}}
+<p *ngFor="let x in item">
+  {{item(x)}}
+</p>
+  
+</div>
+    <!--  -->
+
   
   
 </div> 
