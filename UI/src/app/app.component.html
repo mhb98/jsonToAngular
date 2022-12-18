@@ -11,3 +11,20 @@
 <form (ngSubmit)="onSubmit(f)" #f="ngForm">
   <div id="data"[innerHtml]="htmlview"></div>
 </form>
+
+<div>
+  <h1>Final view of Form</h1>
+  <!-- <p *ngFor="let x of finalForm">
+    {{x.fname}}
+    {{x.lname}}
+
+  </p> -->
+  <h2>
+    {{finalData}}
+  </h2>
+  <p>
+   {{finalData.fname}}
+  </p>
+  
+  
+</div> 

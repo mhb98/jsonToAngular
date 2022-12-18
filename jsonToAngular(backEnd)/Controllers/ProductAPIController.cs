@@ -31,10 +31,16 @@ namespace jsonToAngular_backEnd_.Controllers
         [Route("GetFormModule")]
         public void GetFromAngularApp([FromBody] Object json)
         {
-            
-            sendForm.storeInformation(json);
-            
-            
+            sendForm.storeInformation(json);          
+        }
+
+        [HttpGet]
+        [Route("SendFinalForm")]
+        public string SendFinalForm()
+        {
+            var FinalForm = JsonConvert.SerializeObject(sendForm.FetchFinalData());
+
+            return FinalForm;
         }
 
 

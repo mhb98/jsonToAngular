@@ -81,5 +81,37 @@ namespace jsonToAngular_backEnd_.Repository_Pattern
 
         }
 
+        public string FetchFinalData()
+        {
+            string Form = "";
+            try
+            {
+
+                SqlConnection connection = new SqlConnection(Configuration.GetConnectionString("DefaultConnection").ToString());
+
+                connection.Open();
+                string loadInforamtion = "SELECT userInfo FROM userInformationTable";
+                SqlCommand comm = new SqlCommand(loadInforamtion, connection);
+                SqlDataAdapter sqlDataAdapter = new SqlDataAdapter(comm);
+                DataTable dt = new DataTable();
+                sqlDataAdapter.Fill(dt);
+
+
+                if (dt.Rows.Count > 0)
+                {
+                    Form = Convert.ToString(dt.Rows[0]["userInfo"]);
+
+                }
+
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e.Message);
+            }
+
+            return Form;
+
+        }
+
     }
 }
