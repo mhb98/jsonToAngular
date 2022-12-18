@@ -101,12 +101,11 @@ this.sendToAPI();
             //  this.finalForm.push(responseData);
             // console.log(this.finalForm);
             this.finalData=responseData as string
-            console.log(this.finalData)
            // this.finalData=this.sanitizer.bypassSecurityTrustHtml(this.finalData);
-            // this.finalData=JSON.stringify(this.finalData);
-            // console.log(this.finalData);
-            // this.finalData=JSON.parse(this.finalData);
-            // console.log(this.finalData)
+            //this.finalData=JSON.stringify(this.finalData);
+            console.log(this.finalData);
+            this.finalData=JSON.parse(this.finalData);
+             console.log(this.finalData)
            
              
           })
