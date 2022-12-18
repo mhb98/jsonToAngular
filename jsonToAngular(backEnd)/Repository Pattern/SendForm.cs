@@ -58,12 +58,15 @@ namespace jsonToAngular_backEnd_.Repository_Pattern
                 SqlDataAdapter adapter = new SqlDataAdapter();
                 String sql = "";
 
-                sql = "INSERT INTO userInformationTable (userInfo) VALUES (@json)";
-
+                sql = "INSERT INTO [userInformationTable] VALUES(@userInfo)";
+                
 
                 command = new SqlCommand(sql, connection);
-                adapter.InsertCommand = new SqlCommand(sql, connection);
-                adapter.InsertCommand.ExecuteNonQuery();
+                command.Parameters.AddWithValue("@userInfo", json.ToString());
+
+                command.ExecuteNonQuery();
+                //adapter.InsertCommand = new SqlCommand(sql, connection);
+                //adapter.InsertCommand.ExecuteNonQuery();
 
                 command.Dispose(); 
 		        connection.Close();
