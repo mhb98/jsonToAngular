@@ -2,10 +2,6 @@
   <h1>
       {{ title }}!
   </h1>
-
-
-<!-- <div [innerHTML]="htmlview"></div>
-<button (ngSubmit)="onSubmit()">Submit</button> -->
 </div>
 
 <form (ngSubmit)="onSubmit(f)" #f="ngForm">
@@ -14,32 +10,8 @@
 
 <div>
   <h1>Final view of Form</h1>
-  <!-- <p *ngFor="let x of finalForm">
-    {{x.fname}}
-    {{x.lname}}
 
-  </p> -->
-  <!-- <h2>
-    {{finalData}}
-  </h2> -->
-  <p>
-    {{finalData}}
-   {{finalData.fname}}
-   {{finalData.lname}}
-  </p>
-
-<h1>ARRRAAYYYYYY</h1>
-
-<div *ngFor="let item of finalForm">
-  {{finalForm}}
-  {{item}}
-<p *ngFor="let x in item">
-  {{item(x)}}
-</p>
-  
-</div>
-    <!--  -->
-
-  
-  
+<div *ngFor="let item of finalData | keyvalue">
+  {{item.key}}:{{item.value}}
+</div> 
 </div> 

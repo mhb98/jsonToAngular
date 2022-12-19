@@ -98,18 +98,13 @@ this.sendToAPI();
         .get('https://localhost:7060/api/ProductAPI/SendFinalForm')
         .pipe(
           map(responseData => {
-            //  this.finalForm.push(responseData);
-            // console.log(this.finalForm);
             this.finalData=responseData as string
-           // this.finalData=this.sanitizer.bypassSecurityTrustHtml(this.finalData);
-            //this.finalData=JSON.stringify(this.finalData);
-            console.log(this.finalData);
-            this.finalData=JSON.parse(this.finalData);
+             this.finalData=JSON.parse(this.finalData);
              console.log(this.finalData)
 
 
-             this.finalForm.push(this.finalData);
-             console.log(this.finalForm)
+         //    this.finalForm.push(this.finalData);
+         // console.log(this.finalForm)
            
              
           })
