@@ -89,6 +89,7 @@ export class AppComponent implements OnInit{
     //this.PersonList.push(person);
 
 }
+this.person['Decison']="pending"
 this.sendToAPI();
      }
 
@@ -102,7 +103,6 @@ this.sendToAPI();
              this.finalData=JSON.parse(this.finalData);
              console.log(this.finalData)
 
-
          //    this.finalForm.push(this.finalData);
          // console.log(this.finalForm)
            
@@ -114,6 +114,19 @@ this.sendToAPI();
           //console.log("Hello");
         });
     }
+
+    onEdit(){
+      console.log(this.finalData.fname)
+    }
+    onApprove(){
+      this.finalData.Decison="APPROVED";
+      console.log(this.finalData)
+    }
+    onReject(){
+      this.finalData.Decison="REJECTED";
+      console.log(this.finalData)
+    }
+    onDelete(){}
 
 
 }

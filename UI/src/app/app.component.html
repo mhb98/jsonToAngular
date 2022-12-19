@@ -14,4 +14,9 @@
 <div *ngFor="let item of finalData | keyvalue">
   {{item.key}}:{{item.value}}
 </div> 
+<br/>
+<button style="margin-right:10px" (click)="onEdit()">UPDATE</button>
+<button style="margin-right:10px" (click)="onApprove()">APPROVE</button>
+<button style="margin-right:10px"(click)="onReject()">REJECT</button>
+<button style="margin-right:10px"(click)="onDetails()">DELETE</button>
 </div> 
