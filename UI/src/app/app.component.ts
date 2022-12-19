@@ -19,6 +19,8 @@ export class AppComponent implements OnInit{
   serverElements = [{type:'server',name:'TestServer',content:'Just Test!'}];
   PersonList=[];
   person={};
+  toggle:Boolean=false;
+
   constructor (private http: HttpClient,private sanitizer:DomSanitizer) {
     //this.htmlview=this.sanitizer.bypassSecurityTrustHtml(this.arrBirds);
     //console.log(this.htmlview)
@@ -115,8 +117,29 @@ this.sendToAPI();
         });
     }
 
-    onEdit(){
-      console.log(this.finalData.fname)
+    onUpdate(form:NgForm){
+      for(var i=0;i<document
+        .getElementById('Parent')
+        .querySelectorAll('input')
+        .length; i++){
+  
+      var keyID=document
+        .getElementById('Parent')
+        .querySelectorAll('input')
+        .item(i).id;
+  
+      var value=document
+        .getElementById('Parent')
+        .querySelectorAll('input')
+        .item(i).value;
+  
+      
+  
+      this.person[keyID]=value;  
+  }
+  console.log(this.person)
+  this.sendToAPI();
+      
     }
     onApprove(){
       this.finalData.Decison="APPROVED";
