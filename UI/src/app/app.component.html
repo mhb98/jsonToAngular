@@ -8,11 +8,12 @@
   <div id="data"[innerHtml]="htmlview"></div>
 </form>
 
-<div>
-  <h1>Final view of Form</h1>
+<div style="border: solid 3px; padding: 10px; display:block; margin:5px">
+  <h1 style="color: red;">Final view of Form</h1>
 
-<div *ngFor="let item of finalData | keyvalue">
-  {{item.key}}:{{item.value}}
+<div style="padding: 1px; margin: 1px;"
+  *ngFor="let item of finalData | keyvalue">
+  <p style="font-size: 1.3rem;">{{item.key}} : {{item.value}}</p>
 </div> 
 <br/>
 <button style="margin-right:10px" (click)="onApprove()">APPROVE</button>
@@ -21,7 +22,7 @@
 </div> 
 
 <h1>update</h1>
-<form id="Parent" (ngSubmit)="onUpdate(f1)" #f1="ngForm">
+<form style="align-items: center;" id="Parent" (ngSubmit)="onUpdate(f1)" #f1="ngForm">
 <div *ngFor="let item of finalData | keyvalue">
  <label>{{item.key}}:</label>
   <input id="{{item.key}}" style="margin: 5px;" value="{{item.value}}" [disabled]="toggle"> <br/>
